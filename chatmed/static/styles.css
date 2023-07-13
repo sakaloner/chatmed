@@ -1,0 +1,23 @@
+#templates {
+    display: flex;
+    flex-direction: column;
+}
+.field-div {
+    padding:3px;
+}
+#template-title {
+    font-size: 20px;
+}
+.template-form {
+    padding:10px;
+}
+#text:focus {
+    width:100%;
+    transition: width 0.4s ease-in-out;
+}
+
+
+#template-buttons-div {
+    display: flex;
+    flex-direction: column;
+}
