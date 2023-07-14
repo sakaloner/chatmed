@@ -1,7 +1,33 @@
 // config button
 document.getElementById('config').addEventListener('click', async() => {
-    console.log('clicked config')
     chrome.tabs.create({url:'config.html'})
+})
+// chatmed button
+function getFormValues (data) => {
+    let finalArray = [];
+    data.forEach(item => {
+        item.fields.forEach(field => {
+            console.log(field.name, field.text, field.tid);
+            let input = document.getElementById(field.tid)
+            if (input.value) {
+                let dicto = {}
+                dicto[field.name] = input.value
+                finalArray.push(dicto)
+            }
+        });
+    });
+    console.log('final array', finalArray)
+    return finalArray;
+}
+
+document.getElementById('chatmed').addEventListener('click', async() => {
+    fetch('formInputs.json') // replace 'data.json' with the path to your JSON file
+        .then(response => response.json())
+        .then(data => {
+            let patientInfo = getFormValues(data);
+            localStorage.setItem('PatientInfo', patientInfo);
+            chrome.tabs.create({url:'index.html'})
+        });
 })
 // create buttons
 chrome.runtime.sendMessage({action: 'getTemplates'}, async (response) => {

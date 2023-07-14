@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Chat from '../lib/Chat.svelte'
+    import InfoPatient from '../lib/InfoPatient.svelte'
+</script>
+
+<div id='main-div'>
+    <InfoPatient/>
+    <Chat/>
+</div>
