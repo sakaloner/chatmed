@@ -8,6 +8,5 @@
  })
 </script>
 <div>
-    <h3>nombre paciente</h3>
-    <h3>Current Tab</h3><p>{currentTabUrl}</p>
+    <h1>ChatMed</h1>
 </div>
