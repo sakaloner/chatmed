@@ -6,25 +6,39 @@
     {role: 'assistant', content: 'Hola, como puedo ayudarte hoy?'}
   ];
 
+  let isGPT4Active = false;
+
+  function toggleActivation() {
+    isGPT4Active = !isGPT4Active;
+  }
+
   async function handleSubmit () {
     messages = [...messages, {role: 'user', content: input}];
     input = '';
     messages = [...messages, {role: 'assistant', content: '...'}];
     let msg_minus = messages.slice(0, messages.length-1)
     console.log('messages to send', msg_minus)
-    let res = await callapi(msg_minus)
+    let res = await callapi(msg_minus, isGPT4Active)
     messages.pop()
     console.log('res', res, res['content'])
     messages = [...messages, {role:'assistant', content:res['content']}]
   }
 </script>
 
+<div>
+  <button on:click={toggleActivation}>
+    {#if isGPT4Active}
+      Deactivate GPT-4
+    {:else}
+      Activate GPT-4
+    {/if}
+  </button>
+</div>
 <div class="chat-window">
   {#each messages as message, index (index)}
     <Message {message} />
   {/each}
 </div>
-
 
 <form on:submit|preventDefault={handleSubmit}>
   <input bind:value={input} placeholder="Type your message here..." />

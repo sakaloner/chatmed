@@ -4,32 +4,32 @@
             {
                 "name": "peso",
                 "text": "70",
-                "tid": ".numberInputText.peso"
+                "tid": "#gestionPaciente > span > span > span:nth-child(17) > span > span > span > div > div:nth-child(3) > span > span > div > div > span:nth-child(1) > span > div > div > div > span > span > div > div > div > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > span > span > input"
             },
             {
                 "name": "frecuencia cardiaca",
                 "text": "60",
-                "tid": ".numberInputText.frecuenciaCardiaca"
+                "tid": "#gestionPaciente > span > span > span:nth-child(17) > span > span > span > div > div:nth-child(3) > span > span > div > div > span:nth-child(2) > span > div > div > div:nth-child(1) > span > span > div > div > div > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > span > span > input"
             },
             {
                 "name": "frecuencia respiratoria",
                 "text": "16",
-                "tid": ".numberInputText.frecuenciaRespiratoria"
+                "tid": "#gestionPaciente > span > span > span:nth-child(17) > span > span > span > div > div:nth-child(3) > span > span > div > div > span:nth-child(2) > span > div > div > div:nth-child(1) > span > span > div > div > div > div > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > span > span > input"
             },
             {
                 "name": "presion sistolica",
                 "text": "120",
-                "tid": ".numberInputText.presionSistolica"
+                "tid": "#presion-arterial-section > div > div > div > span > span.ng-scope > div > div:nth-child(1) > span > input"
             },
             {
                 "name": "presion diastolica",
                 "text": "80",
-                "tid": ".numberInputText.presionDiastolica"
+                "tid": "#presion-arterial-section > div > div > div > span > span.ng-scope > div > div:nth-child(2) > span > input"
             },
             {
                 "name": "revision sistema",
                 "text": "Niega",
-                "tid": ".isInputTextArea.proc-revisionsistema"
+                "tid": ".isInputTextArea.proc-revisionsistemas"
             },
             {
                 "name": "estado general",

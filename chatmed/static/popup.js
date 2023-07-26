@@ -18,7 +18,6 @@ chrome.runtime.sendMessage({action: 'getTemplates'}, async (response) => {
         buttonsDiv.appendChild(tempButton)
         // make it fill the page
         tempButton.addEventListener('click', async() => {
-            console.log('clicked filling button')
             let fields = template.fields
             chrome.scripting.executeScript({
                 target: { tabId: tab.id },
@@ -39,19 +38,13 @@ chrome.runtime.sendMessage({action: 'getTemplates'}, async (response) => {
 function fillForm(fields) {
     const eventInput = new Event('input', { bubbles: true });
     const eventChange = new Event('change', { bubbles: true });
-
     console.log('filling-form')
-    console.log('fields', fields)
     for (let {tid, text, name} of fields) {
         let element = document.querySelector(tid)
-        console.log(tid, text, name)
-        console.log('found element',)
         if (element) {
             // give a good class to the required
             if (element.required === true) {
                 element.classList.add("ng-dirty", "ng-valid", "ng-valid-required")
-                console.log('class_list', element.classList)
-                console.log('elemento en cuestion', element)
             };
             if (element.tagName === 'SELECT') {
                 for (let option of element.options) {
@@ -64,11 +57,9 @@ function fillForm(fields) {
             } else {
                 let numText = Number(text)
                 if (!isNaN(numText)) {
-                    console.log('setting the new value')
                     element.value = numText;
 
                 } else {
-                    console.log('setting the new value text')
                     element.value = text;
                 }
             };

@@ -14,7 +14,7 @@ let generalTemplate =
             {name:'presion diastolica', text:"80", tid:".numberInputText.presionDiastolica"},
 
             /// revision sistemas
-            {name:'revision sistema', text:"Niega", tid:".isInputTextArea.proc-revisionsistema"},
+            {name:'revision sistema', text:"Niega", tid:".isInputTextArea.proc-revisionsistemas"},
             // antecedentes generales
             {
                 name:'estado general',
