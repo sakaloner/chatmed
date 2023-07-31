@@ -63,7 +63,7 @@ function createTemplateButtons(form, template, templates) {
             templates.splice(index, 1);
         }
 
-        chrome.storage.sync.set({templates: templates}, () => {
+        chrome.storage.local.set({templates: templates}, () => {
             console.log('Template deleted');
         });
     });
@@ -84,7 +84,7 @@ function createTemplateButtons(form, template, templates) {
         let newTemplate = {templateId:form.id, name: templateTitle.value, fields: fields};
         console.log('form id', form.id, form)
         console.log(templateTitle.parentNode.id)
-        chrome.storage.sync.get('templates', (data) => {
+        chrome.storage.local.get('templates', (data) => {
             let templates = data.templates;
             // If no templates exist, create a new array
             if (!templates) {
@@ -101,7 +101,7 @@ function createTemplateButtons(form, template, templates) {
                 templates.push(newTemplate);
             }
             // Save the updated templates
-            chrome.storage.sync.set({templates: templates}, () => {
+            chrome.storage.local.set({templates: templates}, () => {
                 console.log('Template saved');
             });
         });
@@ -129,7 +129,7 @@ function createTemplateForm(template, templates) {
 }
 
 
-chrome.storage.sync.get('templates', (data) => {
+chrome.storage.local.get('templates', (data) => {
     let templates = data.templates;
     let templatesDiv = document.getElementById('templates');
 
@@ -156,7 +156,7 @@ chrome.storage.sync.get('templates', (data) => {
 // synquing stuff
 let exportConfig = document.querySelector('#export-config')
 exportConfig.addEventListener('click', function(event) {
-    chrome.storage.sync.get('templates', (data) => {
+    chrome.storage.local.get('templates', (data) => {
         console.log('your config file', data.templates);
         alert('data sent to the console')
     })
@@ -169,7 +169,7 @@ importConfig.addEventListener('click', function(event) {
     if (userInput) {
         console.log('theres user input')
         let templates = JSON.parse(userInput);
-        chrome.storage.sync.set({templates: templates});
+        chrome.storage.local.set({templates: templates});
         location.reload(true)
     }
 });

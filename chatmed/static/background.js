@@ -32,13 +32,13 @@ let generalTemplate =
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === 'getTemplates') {
-        chrome.storage.sync.get('templates', (data) => {
+        chrome.storage.local.get('templates', (data) => {
             console.log('data', data)
             console.log('templates', data.templates)
             if (!data.templates || data.templates.length == 0) {
                 console.log('no data templates')
                 let templates = [generalTemplate];
-                chrome.storage.sync.set({templates: templates}, () => {
+                chrome.storage.local.set({templates: templates}, () => {
                     console.log('Default template saved');
                 });
                 sendResponse({templates: templates});
@@ -52,4 +52,3 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         return true;  // Indicates that we will send a response asynchronously
     }
 });
-chrome.storage.sync.get(null, function (data) { console.info(data) });
