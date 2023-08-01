@@ -1,3 +1,4 @@
+import 'dotenv/config'
 export default async function callapi(history, isGPT4) {
     let first_prompt = `
 Soy médico general. Me ayudarás a diagnosticar y tratar a los pacientes que acuden a mi consulta. Por favor
@@ -18,7 +19,7 @@ o "Recuerda que estos son posibles diagnósticos, pero siempre se debe realizar 
     let res = await fetch("https://api.openai.com/v1/chat/completions", {
         body: JSON.stringify(data),
         headers: {
-            Authorization: "Bearer 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",
+            Authorization: "Bearer process.env.PUBLIC_OPENAI_API_KEY",
             "Content-Type": "application/json"
         },
         method: "POST"

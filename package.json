@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"dotenv": "^16.3.1",
 		"openai": "^3.3.0",
 		"tiny-glob": "^0.2.9"
 	}
