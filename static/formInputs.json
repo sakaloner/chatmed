@@ -1,0 +1,136 @@
+[
+    {
+        "fields": [
+            {
+                "name": "peso",
+                "text": "70",
+                "tid": "#gestionPaciente > span > span > span:nth-child(17) > span > span > span > div > div:nth-child(3) > span > span > div > div > span:nth-child(1) > span > div > div > div > span > span > div > div > div > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > span > span > input"
+            },
+            {
+                "name": "frecuencia cardiaca",
+                "text": "60",
+                "tid": "#gestionPaciente > span > span > span:nth-child(17) > span > span > span > div > div:nth-child(3) > span > span > div > div > span:nth-child(2) > span > div > div > div:nth-child(1) > span > span > div > div > div > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > span > span > input"
+            },
+            {
+                "name": "frecuencia respiratoria",
+                "text": "16",
+                "tid": "#gestionPaciente > span > span > span:nth-child(17) > span > span > span > div > div:nth-child(3) > span > span > div > div > span:nth-child(2) > span > div > div > div:nth-child(1) > span > span > div > div > div > div > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > span > span > input"
+            },
+            {
+                "name": "presion sistolica",
+                "text": "120",
+                "tid": "#presion-arterial-section > div > div > div > span > span.ng-scope > div > div:nth-child(1) > span > input"
+            },
+            {
+                "name": "presion diastolica",
+                "text": "80",
+                "tid": "#presion-arterial-section > div > div > div > span > span.ng-scope > div > div:nth-child(2) > span > input"
+            },
+            {
+                "name": "revision sistema",
+                "text": "Niega",
+                "tid": ".isInputTextArea.proc-revisionsistemas"
+            },
+            {
+                "name": "estado general",
+                "text": "- Patológicos: Niega\n- Medicamentos: Niega\n- Quirúrgicos: Niega\n- Alérgicos: Niega.\n- Toxicológicos: Niega\n- Familiares: Niega.\n- FUM: Hace menos de un mes\n- Citologia: Ya realizada en el último año, con resultado favorable\n- Mamografia:",
+                "tid": ".isInputTextArea.estado-gral-paciente"
+            },
+            {
+                "name": "analisis",
+                "text": "Paciente cursando con sintomatologia sugestiva de - . Al examen fisico estable hemodinamicamente. Por lo anterior se indica - Se dan recomendaciones y signos de alarma para consultar a urgencias, el paciente comprende y acepta.",
+                "tid": "#analisis-plan"
+            },
+            {
+                "name": "diagnosito principal",
+                "text": "Z719-CONSULTA, NO ESPECIFICADA",
+                "tid": "#to-diagnostico-ppal"
+            },
+            {
+                "name": "tipo diagnostico",
+                "text": "Impresión diagnóstica",
+                "tid": ".select.proc-tipoDiagnosticoPpal"
+            }
+        ],
+        "name": "General Template",
+        "templateId": "ljyqhkd5e5y7onzj2y"
+    },
+    {
+        "fields": [
+            {
+                "name": "Enfermedad Actual",
+                "text": "Paciente quien presenta cuadro clinico de evolución de 1 dia de dolor lumbar agudo tipo opresivo 9/10 en escala análoga del dolor, niega parestesias, niega pérdida de fuerza, niega fiebre, niega la levanta en la noche, niega trauma, niega antecedente de cancer, niega uso de drogas parenterales, niega uso cronico de corticoides; niega fiebre sudoración nocturna o perdida significativa de peso",
+                "tid": ".isInputTextArea.proc-enfermedadactual"
+            },
+            {
+                "name": "Motivo Consulta",
+                "text": "Al paciente le duele la espalda un monton",
+                "tid": ".isInputTextArea.proc-motivoconsulta"
+            },
+            {
+                "name": "notas y analisis del plan",
+                "text": "Paciente cursando con sintomatologia sugestiva de lumbago, sin signo de alarma. Al examen fisico estable hemodinamicamente, no deficit neurosensorial, lasegue negativo. Por lo anterior se indica analgesia, se ordena incapacidad, se dan recomendaciones (uso de compresas calientes, buena higiene de movimientos de columna) y signos de alarma para consultar a urgencias, el paciente comprende y acepta.",
+                "tid": ".isInputTextArea.proc-ap-notasap"
+            },
+            {
+                "name": "Dx principal",
+                "text": "M545-LUMBAGO NO ESPECIFICADO",
+                "tid": ".textInputAuto.proc-diagnosticoPpal"
+            }
+        ],
+        "name": "Dolor Lumbar",
+        "templateId": "ljyqhnqmlq5shldttb"
+    },
+    {
+        "fields": [
+            {
+                "name": "Motivo Consulta",
+                "text": "me duele la cabeza",
+                "tid": ".isInputTextArea.proc-motivoconsulta"
+            },
+            {
+                "name": "Enfermedad Actual",
+                "text": "Paciente relata cuadro clinico de -- dias de evolución consistente en celfalea hemicraneana Derecha, asociado a su cuadro clinico refiere nausea, fonofobia y fotofobia. Refiere episodios parecidos durante su vida. Niega cefalea intensa de inicio subito, niega precipitación por esfuerzo fisico tos o cambio postural, niega convulsiones. ",
+                "tid": ".isInputTextArea.proc-enfermedadactual"
+            },
+            {
+                "name": "notas y analisis del plan",
+                "text": "Paciente GENERO quien presenta cuadro clinico de cefalea de caracteristicas migrañosas. Estable hemodinamicamente, signos vitales dentro de la normalidad, sin aberración neurologia evidente al examen fisico. Se presume crisis migrañosa sin banderas rojas, por lo cual se ordena manejo sintomatico, se dan recomendaciones de cambios de estilo de vida (Realizar actividad cardiovascular minimo 20 min 3 veces a la semana, llevar diario de desencadenantes y evitarlos, consumir analgesico inmediatamente sienta los sintomas, llevar una dieta equilibra, entre otros). Adicionalmente se le explican los signos de alarma para consultar al servicio de urgencias. El paciente comprende y acepta",
+                "tid": ".isInputTextArea.proc-ap-notasap"
+            },
+            {
+                "name": "Dx",
+                "text": "G439-MIGRAÑA, NO ESPECIFICADA",
+                "tid": ".textInputAuto.proc-diagnosticoPpal"
+            }
+        ],
+        "name": "Migraña",
+        "templateId": "ljyr93ofj76edso8lq"
+    },
+    {
+        "fields": [
+            {
+                "name": "Motivo Consulta",
+                "text": "Cuadro de XX días Rinorrea hialina y congestión nasal comenta que mejora con reposo y empeora con la exposición ambientes fríos, húmedos y aires acondicionados, con predominio nocturno. Refiere se asocia a fiebre no cuantificada, malestar general, astenia, adinamia, refiere tos seca. Niega contacto estrecho con positivos o sospechosos de infección por COVID 19. Niega disnea, dolor torácico, niega síntomas gastrointestinales. Refiere que no se ha automedicado",
+                "tid": ".isInputTextArea.proc-motivoconsulta"
+            },
+            {
+                "name": "Enfermedad Actual",
+                "text": "Paciente con antecedentes descritos, ahora cursando con cuadro sugestivo de rinofaringitis aguda de probable etiología viral. En el momento estable hemodinámicamente, sin signos de infección sistémica, sin signos de dificultad respiratoria o culaquier otro signo de alarma. Se ordena manejo ambulatorio sintomático, incapacidad. Se dan recomendaciones, signos de alarma, se resuelven dudas. Paciente dice que entiende y acepta.",
+                "tid": ".isInputTextArea.proc-enfermedadactual"
+            },
+            {
+                "name": "notas y analiss del plan",
+                "text": "Paciente con antecedentes descritos, ahora cursando con cuadro sugestivo de rinofaringitis aguda de probable etiología viral. En el momento estable hemodinámicamente, sin signos de infección sistémica, sin signos de dificultad respiratoria o culaquier otro signo de alarma. Se ordena manejo ambulatorio sintomático, incapacidad. Se dan recomendaciones, signos de alarma, se resuelven dudas. Paciente dice que entiende y acepta.",
+                "tid": ".isInputTextArea.proc-ap-notasap"
+            },
+            {
+                "name": "Dx",
+                "text": "J00X-RINOFARINGITIS AGUDA [RESFRIADO COMÚN]",
+                "tid": ".textInputAuto.proc-diagnosticoPpal"
+            }
+        ],
+        "name": "Gripa",
+        "templateId": "ljyrlb6shgfkuu7vlbn"
+    }
+]
